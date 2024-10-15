@@ -19,6 +19,9 @@ IntelliJ IDEA - version 2023.2.6
 https://www.jetbrains.com/idea/download/other.html
 
 ### User guide: How To Use Software
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jzlZ_cSAogE" frameborder="0" allowfullscreen></iframe>
+
 #### Part I (New Player):
 1. Run the MainMenu.java file.
 
