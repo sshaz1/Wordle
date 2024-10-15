@@ -16,7 +16,7 @@ https://gluonhq.com/products/javafx/
 
 ### User guide: How To Use Software
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jzlZ_cSAogE" frameborder="0" allowfullscreen></iframe>
+[![Watch this video on YouTube](https://img.youtube.com/vi/jzlZ_cSAogE/hqdefault.jpg)](https://youtu.be/jzlZ_cSAogE)
 
 #### Part I (New Player):
 1. Run the MainMenu.java file.
