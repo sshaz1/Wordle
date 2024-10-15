@@ -14,10 +14,6 @@ JavaFX - version 21.0.2
 - JavaFX is available to download from the gluon website:
 https://gluonhq.com/products/javafx/
 
-IntelliJ IDEA - version 2023.2.6
-- IntelliJ IDEA is available to download from jetbrains.com:
-https://www.jetbrains.com/idea/download/other.html
-
 ### User guide: How To Use Software
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jzlZ_cSAogE" frameborder="0" allowfullscreen></iframe>
