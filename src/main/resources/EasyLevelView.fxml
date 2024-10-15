@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wordle.LevelsController">
+    <!-- Top Section -->
+    <top>
+        <HBox style="-fx-background-color: #f0f0f0; -fx-padding: 10px;">
+            <Label prefHeight="18.0" prefWidth="500.0" style="-fx-font-family: 'Helvetica Bold'; -fx-font-size: 14px;" text="Level Selection (Easy)" />
+            <StackPane alignment="CENTER" HBox.hgrow="ALWAYS" />
+        </HBox>
+    </top>
+
+    <!-- Center Section -->
+    <center>
+        <GridPane alignment="CENTER" hgap="10" prefHeight="416.0" prefWidth="387.0" vgap="10">
+            <Label style="-fx-font-family: 'Helvetica Bold'; -fx-font-size: 36px; -fx-font-weight: bold;" text="Easy Levels" GridPane.columnSpan="5" />
+            <!-- Buttons for levels 1-10 -->
+            <!-- Row 1 -->
+            <Label fx:id="playerId" managed="false" text="Player ID" visible="false" />
+            <Button fx:id="level1" onAction="#handleLevelButtonAction" style="-fx-background-color: green; -fx-text-fill: white; -fx-shape: 'M0,50 A50,50 0 1,1 100,50 A50,50 0 1,1 0,50 Z'; -fx-min-width: 50; -fx-min-height: 50;" text="1" GridPane.rowIndex="1" />
+            <Button fx:id="level2" onAction="#handleLevelButtonAction" style="-fx-background-color: green; -fx-text-fill: white; -fx-shape: 'M0,50 A50,50 0 1,1 100,50 A50,50 0 1,1 0,50 Z'; -fx-min-width: 50; -fx-min-height: 50;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="level3" onAction="#handleLevelButtonAction" style="-fx-background-color: green; -fx-text-fill: white; -fx-shape: 'M0,50 A50,50 0 1,1 100,50 A50,50 0 1,1 0,50 Z'; -fx-min-width: 50; -fx-min-height: 50;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="level4" onAction="#handleLevelButtonAction" style="-fx-background-color: green; -fx-text-fill: white; -fx-shape: 'M0,50 A50,50 0 1,1 100,50 A50,50 0 1,1 0,50 Z'; -fx-min-width: 50; -fx-min-height: 50;" text="4" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="level5" onAction="#handleLevelButtonAction" style="-fx-background-color: green; -fx-text-fill: white; -fx-shape: 'M0,50 A50,50 0 1,1 100,50 A50,50 0 1,1 0,50 Z'; -fx-min-width: 50; -fx-min-height: 50;" text="5" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <!-- Row 2 -->
+            <Button fx:id="level6" onAction="#handleLevelButtonAction" style="-fx-background-color: green; -fx-text-fill: white; -fx-shape: 'M0,50 A50,50 0 1,1 100,50 A50,50 0 1,1 0,50 Z'; -fx-min-width: 50; -fx-min-height: 50;" text="6" GridPane.rowIndex="2" />
+            <Button fx:id="level7" onAction="#handleLevelButtonAction" style="-fx-background-color: green; -fx-text-fill: white; -fx-shape: 'M0,50 A50,50 0 1,1 100,50 A50,50 0 1,1 0,50 Z'; -fx-min-width: 50; -fx-min-height: 50;" text="7" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="level8" onAction="#handleLevelButtonAction" style="-fx-background-color: green; -fx-text-fill: white; -fx-shape: 'M0,50 A50,50 0 1,1 100,50 A50,50 0 1,1 0,50 Z'; -fx-min-width: 50; -fx-min-height: 50;" text="8" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="level9" onAction="#handleLevelButtonAction" style="-fx-background-color: green; -fx-text-fill: white; -fx-shape: 'M0,50 A50,50 0 1,1 100,50 A50,50 0 1,1 0,50 Z'; -fx-min-width: 50; -fx-min-height: 50;" text="9" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="level10" onAction="#handleLevelButtonAction" style="-fx-background-color: green; -fx-text-fill: white; -fx-shape: 'M0,50 A50,50 0 1,1 100,50 A50,50 0 1,1 0,50 Z'; -fx-min-width: 50; -fx-min-height: 50;" text="10" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+                <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+    </center>
+
+    <!-- Bottom Section -->
+    <bottom>
+        <HBox alignment="BOTTOM_LEFT" style="-fx-padding: 10px;">
+            <Button fx:id="backButton" onAction="#handleBackButtonAction" style="-fx-background-color: #787c7e; -fx-text-fill: white; -fx-font-family: 'Helvetica Bold'; -fx-font-weight: bold; -fx-font-size: 16px; -fx-min-width: 100px; -fx-min-height: 50px;" text="Back" />
+        </HBox>
+    </bottom>
+</BorderPane>

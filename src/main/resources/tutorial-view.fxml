@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wordle.MainMenuController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <HBox prefHeight="25.0" prefWidth="180.0" translateY="30.0">
+      <children>
+         <Button fx:id="backButton" mnemonicParsing="false" onAction="#goToMainMenu" text="Back" />
+      </children>
+   </HBox>
+   <Label prefHeight="71.0" prefWidth="366.0" text="How To Play" translateX="-250.0" translateY="10.0">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="55.0" />
+      </font>
+   </Label>
+   <Label minHeight="-Infinity" minWidth="-Infinity" text=" Guess The Wordle" translateX="-350.0">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="15.0" />
+      </font>
+   </Label>
+   <Label prefHeight="22.0" prefWidth="267.0" text="- Each guess must be a valid word" translateX="-250.0" translateY="-20.0">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="15.0" />
+      </font>
+   </Label>
+   <Label text="Example (5 letters)" translateX="-254.0" translateY="-10.0">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="38.0" />
+      </font>
+   </Label>
+   <Label prefHeight="22.0" prefWidth="542.0" text="- Each guess must correspond to the number of letters given in that level" translateX="-112.0" translateY="-100.0">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="15.0" />
+      </font>
+   </Label>
+   <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="91.0" prefWidth="824.0" translateY="-50.0">
+      <children>
+         <Label alignment="CENTER" prefHeight="89.0" prefWidth="94.0" style="-fx-border-color: #1bc13f; -fx-background-color: #1bc13f;" text="L" textAlignment="CENTER" textFill="WHITE">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="48.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Label>
+         <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="89.0" prefWidth="94.0" style="-fx-border-color: black;" text="E" textAlignment="CENTER">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="48.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Label>
+         <Label alignment="CENTER" layoutX="104.0" layoutY="10.0" prefHeight="89.0" prefWidth="94.0" style="-fx-border-color: black;" text="M" textAlignment="CENTER">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="48.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Label>
+         <Label alignment="CENTER" layoutX="199.0" layoutY="10.0" prefHeight="89.0" prefWidth="94.0" style="-fx-border-color: black;" text="O" textAlignment="CENTER">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="48.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Label>
+         <Label alignment="CENTER" layoutX="293.0" layoutY="10.0" prefHeight="89.0" prefWidth="94.0" style="-fx-border-color: black;" text="N" textAlignment="CENTER">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="48.0" />
+            </font>
+         </Label>
+      </children>
+   </HBox>
+   <Label prefHeight="18.0" prefWidth="269.0" text="L is in the word and the correct spot" translateX="-270.0" translateY="-60.0">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="15.0" />
+      </font>
+   </Label>
+   <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="91.0" prefWidth="824.0" translateY="-70.0">
+      <children>
+         <Label alignment="CENTER" prefHeight="89.0" prefWidth="94.0" style="-fx-border-color: black;" text="M" textAlignment="CENTER">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="48.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Label>
+         <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="89.0" prefWidth="94.0" style="-fx-border-color: black;" text="A" textAlignment="CENTER">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="48.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Label>
+         <Label alignment="CENTER" layoutX="104.0" layoutY="10.0" prefHeight="89.0" prefWidth="94.0" style="-fx-border-color: black;" text="N" textAlignment="CENTER">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="48.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Label>
+         <Label alignment="CENTER" layoutX="199.0" layoutY="10.0" prefHeight="89.0" prefWidth="94.0" style="-fx-border-color: #fce771; -fx-background-color: #fce771;" text="G" textAlignment="CENTER" textFill="WHITE">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="48.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Label>
+         <Label alignment="CENTER" layoutX="293.0" layoutY="10.0" prefHeight="89.0" prefWidth="94.0" style="-fx-border-color: black;" text="O" textAlignment="CENTER">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="48.0" />
+            </font>
+         </Label>
+      </children>
+   </HBox>
+   <Label text="G is in the word but in the wrong spot" translateX="-270.0" translateY="-85.0">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="15.0" />
+      </font>
+   </Label>
+   <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="95.0" prefWidth="824.0" translateY="-90.0">
+      <children>
+         <Label alignment="CENTER" prefHeight="89.0" prefWidth="94.0" style="-fx-border-color: black;" text="P" textAlignment="CENTER">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="48.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Label>
+         <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="89.0" prefWidth="94.0" style="-fx-border-color: black;" text="E" textAlignment="CENTER">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="48.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Label>
+         <Label alignment="CENTER" layoutX="104.0" layoutY="10.0" prefHeight="89.0" prefWidth="94.0" style="-fx-border-color: black;" text="A" textAlignment="CENTER">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="48.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Label>
+         <Label alignment="CENTER" layoutX="199.0" layoutY="10.0" prefHeight="89.0" prefWidth="94.0" style="-fx-border-color: black;" text="C" textAlignment="CENTER">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="48.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="5.0" />
+            </HBox.margin>
+         </Label>
+         <Label alignment="CENTER" layoutX="293.0" layoutY="10.0" prefHeight="89.0" prefWidth="94.0" style="-fx-border-color: black;" text="H" textAlignment="CENTER">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="48.0" />
+            </font>
+         </Label>
+      </children>
+   </HBox>
+   <Label prefHeight="42.0" prefWidth="274.0" text="None of these letters are in the word" translateX="-270.0" translateY="-100.0">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="15.0" />
+      </font>
+   </Label>
+   <HBox translateY="-100.0">
+      <children>
+         <Label prefHeight="43.0" prefWidth="115.0" text="Tips">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="55.0" />
+            </font>
+         </Label>
+      </children>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </HBox>
+   <VBox prefHeight="90.0" prefWidth="960.0" translateY="-100.0">
+      <children>
+         <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="875.0" text="Save/Load: Game Auto Saves. To load: enter Player Id displayed at the top of level select screen.">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="15.0" />
+            </font>
+         </Label>
+         <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="794.0" text="Hit Refresh on scoreboard screen to see latest highscores.">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="15.0" />
+            </font>
+         </Label>
+         <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="718.0" text="Completing a Level unlocks the next one!">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="15.0" />
+            </font>
+         </Label>
+         <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="718.0" text="You can press Enter to input Guesses, Names, Ids, and Passwords!">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="15.0" />
+            </font>
+         </Label>
+      </children>
+   </VBox>
+</VBox>

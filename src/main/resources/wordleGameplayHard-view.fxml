@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="905.0" prefWidth="1012.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wordle.WordleGameplayControllerHard">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+  <AnchorPane prefHeight="526.0" prefWidth="972.0">
+    <children>
+      <HBox alignment="CENTER" layoutX="209.0" layoutY="216.0" prefHeight="100.0" prefWidth="383.0">
+        <children>
+          <Label fx:id="box10" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box11" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box12" alignment="CENTER" layoutX="80.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box13" alignment="CENTER" layoutX="150.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box14" alignment="CENTER" layoutX="220.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+        </children>
+      </HBox>
+      <Text layoutX="299.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WORDLE">
+        <font>
+          <Font name="Helvetica Bold" size="51.0" />
+        </font>
+      </Text>
+      <HBox alignment="CENTER" layoutX="209.0" layoutY="61.0" prefHeight="100.0" prefWidth="383.0">
+        <children>
+          <Label fx:id="box00" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+
+          <!-- Remove managed and visible properties if want to show it, need these for setters -->
+          <Label fx:id="playerName" managed="false" text="Player Name" visible="false" />
+          <Label fx:id="playerId" managed="false" text="Player ID" visible="false" />
+          <Label fx:id="game_level" managed="false" text="Game Level" visible="false" />
+
+
+          <Label fx:id="box01" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box02" alignment="CENTER" layoutX="80.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box03" alignment="CENTER" layoutX="150.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box04" alignment="CENTER" layoutX="220.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+        </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="209.0" layoutY="138.0" prefHeight="100.0" prefWidth="383.0">
+        <children>
+          <Label fx:id="box05" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box06" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box07" alignment="CENTER" layoutX="80.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box08" alignment="CENTER" layoutX="150.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box09" alignment="CENTER" layoutX="220.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+        </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="209.0" layoutY="299.0" prefHeight="100.0" prefWidth="383.0">
+        <children>
+          <Label fx:id="box15" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box16" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box17" alignment="CENTER" layoutX="80.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box18" alignment="CENTER" layoutX="150.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box19" alignment="CENTER" layoutX="220.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+        </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="209.0" layoutY="380.0" prefHeight="100.0" prefWidth="383.0">
+        <children>
+          <Label fx:id="box20" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box21" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box22" alignment="CENTER" layoutX="80.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box23" alignment="CENTER" layoutX="150.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box24" alignment="CENTER" layoutX="220.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+        </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="209.0" layoutY="464.0" prefHeight="100.0" prefWidth="383.0">
+        <children>
+          <Label fx:id="box25" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box26" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box27" alignment="CENTER" layoutX="80.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box28" alignment="CENTER" layoutX="150.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+          <Label fx:id="box29" alignment="CENTER" layoutX="220.0" layoutY="10.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+              <Font size="48.0" />
+            </font>
+            <opaqueInsets>
+              <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+          </Label>
+        </children>
+      </HBox>
+      <Label layoutX="273.0" layoutY="51.0" text="* The word does not contain any duplicate letters.">
+        <font>
+          <Font name="System Italic" size="12.0" />
+        </font>
+      </Label>
+    </children>
+  </AnchorPane>
+
+  <Label fx:id="feedbackText" prefHeight="18.0" prefWidth="352.0" />
+  <AnchorPane prefHeight="343.0" prefWidth="972.0">
+    <children>
+      <Button fx:id="continueButton" layoutX="488.0" layoutY="-17.0" onMouseClicked="#onContinueButtonClicked" prefHeight="26.0" prefWidth="96.0" text="Continue" visible="false" />
+      <Text fx:id="pbText" layoutX="261.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" style="visibility: false;" text="New Personal Best!" textAlignment="CENTER" visible="false" wrappingWidth="280.0927734375">
+        <font>
+          <Font name="Helvetica Bold" size="18.0" />
+        </font>
+      </Text>
+      <TextField fx:id="guessInput" layoutX="327.0" layoutY="-15.0" maxHeight="-Infinity" maxWidth="-Infinity" />
+      <Button fx:id="checkButton" layoutX="377.0" layoutY="24.0" onAction="#handleCheckGuess" text="Check" />
+      <Text fx:id="hsText" layoutX="261.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" style="visibility: false;" text="New High Score!" textAlignment="CENTER" visible="false" wrappingWidth="280.0927734375">
+        <font>
+          <Font name="Helvetica Bold" size="18.0" />
+        </font>
+      </Text>
+      <ButtonBar layoutY="85.0" prefHeight="26.0" prefWidth="66.0">
+        <buttons>
+          <Button fx:id="backButton" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onMouseClicked="#onBackButtonClicked" text="Back" />
+        </buttons>
+      </ButtonBar>
+    </children>
+  </AnchorPane>
+</VBox>

@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="668.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wordle.LoginController">
+   <children>
+      <Label fx:id="chosenPlayerLabel" alignment="CENTER_RIGHT" layoutX="170.0" layoutY="14.0" prefHeight="50.0" prefWidth="128.0" text="Player's" textFill="#ff0707">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="308.0" layoutY="14.0" prefHeight="50.0" prefWidth="162.0" text="Progress/Results">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="143.4000244140625" endY="-1.52587890625E-5" layoutX="327.0" layoutY="54.0" startX="-112.80001831054688" startY="-7.62939453125E-6" />
+      <Label layoutX="116.0" layoutY="188.0" prefHeight="30.0" prefWidth="128.0" text="Level Statistics">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="267.0" prefHeight="27.0" prefWidth="43.0" text="Easy:" textFill="#33ac31">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="119.80001831054688" endY="-128.80001831054688" layoutX="205.0" layoutY="348.0" startX="119.00003051757812" startY="293.5999755859375" />
+      <Label layoutX="22.0" layoutY="358.0" prefHeight="27.0" prefWidth="73.0" text="Medium:" textFill="#c19722">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="455.0" prefHeight="27.0" prefWidth="43.0" text="Hard:" textFill="#d73c3c">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="229.0" layoutY="87.0" prefHeight="43.0" prefWidth="226.0" text="Current Total Score">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="chosenPlayerScoreLabel" alignment="CENTER" layoutX="240.0" layoutY="121.0" prefHeight="43.0" prefWidth="169.0" text="0">
+         <font>
+            <Font name="Gill Sans MT" size="29.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5353982385280913" centerY="0.34090913425792346" cycleMethod="REPEAT" focusDistance="1.0" radius="0.18807336387284307">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.15747368335723877" green="0.5052631497383118" blue="0.15157894790172577" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.484499990940094" green="0.7213851809501648" blue="0.949999988079071" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="level11" alignment="CENTER" layoutX="110.0" layoutY="339.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="11" />
+      <Label fx:id="level12" alignment="CENTER" layoutX="144.0" layoutY="339.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="12" />
+      <Label fx:id="level13" alignment="CENTER" layoutX="178.0" layoutY="339.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="13" />
+      <Label fx:id="level14" alignment="CENTER" layoutX="212.0" layoutY="339.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="14" />
+      <Label fx:id="level15" alignment="CENTER" layoutX="244.0" layoutY="339.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="15" />
+      <Label fx:id="level16" alignment="CENTER" layoutX="110.0" layoutY="371.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="16" />
+      <Label fx:id="level17" alignment="CENTER" layoutX="144.0" layoutY="371.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="17" />
+      <Label fx:id="level18" alignment="CENTER" layoutX="178.0" layoutY="371.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="18" />
+      <Label fx:id="level19" alignment="CENTER" layoutX="212.0" layoutY="371.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="19" />
+      <Label fx:id="level20" alignment="CENTER" layoutX="244.0" layoutY="371.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="20" />
+      <Label fx:id="level21" alignment="CENTER" layoutX="110.0" layoutY="436.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="21" />
+      <Label fx:id="level22" alignment="CENTER" layoutX="144.0" layoutY="436.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="22" />
+      <Label fx:id="level23" alignment="CENTER" layoutX="178.0" layoutY="436.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="23" />
+      <Label fx:id="level24" alignment="CENTER" layoutX="212.0" layoutY="436.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="24" />
+      <Label fx:id="level25" alignment="CENTER" layoutX="244.0" layoutY="436.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="25" />
+      <Label fx:id="level26" alignment="CENTER" layoutX="110.0" layoutY="468.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="26" />
+      <Label fx:id="level27" alignment="CENTER" layoutX="144.0" layoutY="468.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="27" />
+      <Label fx:id="level28" alignment="CENTER" layoutX="178.0" layoutY="468.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="28" />
+      <Label fx:id="level29" alignment="CENTER" layoutX="212.0" layoutY="468.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="29" />
+      <Label fx:id="level30" alignment="CENTER" layoutX="244.0" layoutY="468.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="30" />
+      <Label fx:id="level1" alignment="CENTER" layoutX="111.0" layoutY="248.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="1" />
+      <Label fx:id="level2" alignment="CENTER" layoutX="145.0" layoutY="248.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="2" />
+      <Label fx:id="level3" alignment="CENTER" layoutX="179.0" layoutY="248.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="3" />
+      <Label fx:id="level4" alignment="CENTER" layoutX="213.0" layoutY="248.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="4" />
+      <Label fx:id="level5" alignment="CENTER" layoutX="245.0" layoutY="248.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="5" />
+      <Label fx:id="level6" alignment="CENTER" layoutX="111.0" layoutY="280.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="6" />
+      <Label fx:id="level7" alignment="CENTER" layoutX="145.0" layoutY="280.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="7" />
+      <Label fx:id="level8" alignment="CENTER" layoutX="179.0" layoutY="280.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="8" />
+      <Label fx:id="level9" alignment="CENTER" layoutX="213.0" layoutY="280.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="9" />
+      <Label fx:id="level10" alignment="CENTER" layoutX="245.0" layoutY="280.0" prefHeight="32.0" prefWidth="34.0" style="-fx-background-color: #ff1414; -fx-border-color: black;" text="10" />
+      <Label layoutX="30.0" layoutY="550.0" prefHeight="27.0" prefWidth="238.0" text="*                 represents a completed level.">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="45.0" layoutY="552.0" prefHeight="22.0" prefWidth="26.0" style="-fx-background-color: #4bec7e;" text="1" />
+      <Label layoutX="30.0" layoutY="577.0" prefHeight="27.0" prefWidth="238.0" text="*                 represents an uncompleted level.">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="45.0" layoutY="579.0" prefHeight="22.0" prefWidth="26.0" style="-fx-background-color: #ff1414;" text="1" />
+      <Label layoutX="411.0" layoutY="188.0" prefHeight="30.0" prefWidth="128.0" text="Score Statistics">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="604.0" prefHeight="27.0" prefWidth="292.0" text="*                 represents a completed level that the player currently ">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="45.0" layoutY="606.0" prefHeight="22.0" prefWidth="26.0" style="-fx-background-color: #cc00ff;" text="1" />
+      <Label layoutX="34.0" layoutY="628.0" prefHeight="27.0" prefWidth="292.0" text="                 holds the highest score in among all players.">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="342.0" layoutY="248.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="1" />
+      <Label alignment="CENTER" layoutX="342.0" layoutY="275.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="2" />
+      <Label alignment="CENTER" layoutX="342.0" layoutY="302.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="3" />
+      <Label alignment="CENTER" layoutX="342.0" layoutY="329.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="4" />
+      <Label alignment="CENTER" layoutX="342.0" layoutY="353.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="5" />
+      <Label alignment="CENTER" layoutX="342.0" layoutY="380.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="6" />
+      <Label alignment="CENTER" layoutX="342.0" layoutY="405.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="7" />
+      <Label alignment="CENTER" layoutX="342.0" layoutY="431.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="8" />
+      <Label alignment="CENTER" layoutX="342.0" layoutY="458.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="9" />
+      <Label alignment="CENTER" layoutX="342.0" layoutY="485.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="10" />
+      <Label layoutX="331.0" layoutY="563.0" prefHeight="27.0" prefWidth="238.0" text="- Best Score Among Easy Levels:">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="589.0" prefHeight="27.0" prefWidth="258.0" text="- Best Score Among Medium Levels:">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="616.0" prefHeight="27.0" prefWidth="258.0" text="- Best Score Among Hard Levels:">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="personalBestEasyScore" alignment="CENTER" layoutX="546.0" layoutY="567.0" prefHeight="22.0" prefWidth="34.0" text="000" textFill="#33ac31">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="personalBestMediumScore" alignment="CENTER" layoutX="569.0" layoutY="593.0" prefHeight="22.0" prefWidth="34.0" text="000" textFill="#c19722">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="personalBestHardScore" alignment="CENTER" layoutX="547.0" layoutY="620.0" prefHeight="22.0" prefWidth="34.0" text="000" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="368.0" layoutY="248.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="368.0" layoutY="275.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="368.0" layoutY="302.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="368.0" layoutY="329.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="368.0" layoutY="353.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="368.0" layoutY="380.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="368.0" layoutY="405.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="368.0" layoutY="431.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="368.0" layoutY="458.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="368.0" layoutY="486.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="437.0" layoutY="247.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="11" />
+      <Label alignment="CENTER" layoutX="437.0" layoutY="274.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="12" />
+      <Label alignment="CENTER" layoutX="437.0" layoutY="301.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="13" />
+      <Label alignment="CENTER" layoutX="437.0" layoutY="328.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="14" />
+      <Label alignment="CENTER" layoutX="437.0" layoutY="352.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="15" />
+      <Label alignment="CENTER" layoutX="437.0" layoutY="379.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="16" />
+      <Label alignment="CENTER" layoutX="437.0" layoutY="404.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="17" />
+      <Label alignment="CENTER" layoutX="437.0" layoutY="430.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="18" />
+      <Label alignment="CENTER" layoutX="437.0" layoutY="457.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="19" />
+      <Label alignment="CENTER" layoutX="437.0" layoutY="484.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="20" />
+      <Label alignment="CENTER" layoutX="463.0" layoutY="247.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="463.0" layoutY="274.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="463.0" layoutY="301.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="463.0" layoutY="328.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="463.0" layoutY="352.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="463.0" layoutY="379.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="463.0" layoutY="404.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="463.0" layoutY="430.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="463.0" layoutY="457.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="463.0" layoutY="485.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="538.0" layoutY="247.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="21" />
+      <Label alignment="CENTER" layoutX="538.0" layoutY="274.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="22" />
+      <Label alignment="CENTER" layoutX="538.0" layoutY="301.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="23" />
+      <Label alignment="CENTER" layoutX="538.0" layoutY="328.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="24" />
+      <Label alignment="CENTER" layoutX="538.0" layoutY="352.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="25" />
+      <Label alignment="CENTER" layoutX="538.0" layoutY="379.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="26" />
+      <Label alignment="CENTER" layoutX="538.0" layoutY="404.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="27" />
+      <Label alignment="CENTER" layoutX="538.0" layoutY="430.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="28" />
+      <Label alignment="CENTER" layoutX="538.0" layoutY="457.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="29" />
+      <Label alignment="CENTER" layoutX="538.0" layoutY="484.0" prefHeight="27.0" prefWidth="26.0" style="-fx-border-color: black;" text="30" />
+      <Label alignment="CENTER" layoutX="564.0" layoutY="247.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="564.0" layoutY="274.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="564.0" layoutY="301.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="564.0" layoutY="328.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="564.0" layoutY="352.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="564.0" layoutY="379.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="564.0" layoutY="404.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="564.0" layoutY="430.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="564.0" layoutY="457.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="564.0" layoutY="485.0" prefHeight="27.0" prefWidth="15.0" text="-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="score1" layoutX="383.0" layoutY="253.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#33ac31">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score2" layoutX="383.0" layoutY="279.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#33ac31">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score3" layoutX="383.0" layoutY="306.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#33ac31">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score4" layoutX="383.0" layoutY="333.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#33ac31">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score5" layoutX="383.0" layoutY="357.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#33ac31">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score6" layoutX="383.0" layoutY="384.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#33ac31">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score7" layoutX="383.0" layoutY="409.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#33ac31">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score8" layoutX="383.0" layoutY="435.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#33ac31">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score9" layoutX="383.0" layoutY="462.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#33ac31">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score10" layoutX="383.0" layoutY="491.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#33ac31">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Line endX="83.39999389648438" endY="-1.0" layoutX="196.0" layoutY="281.0" startX="-84.9999771118164" startY="-1.0" />
+      <Line endX="67.39999389648438" layoutX="212.0" layoutY="248.0" startX="-100.0" />
+      <Line endX="56.399993896484375" endY="81.0" layoutX="222.0" layoutY="258.0" startX="-112.4999771118164" startY="80.5" />
+      <Line endX="-110.9999771118164" endY="54.0" layoutX="222.0" layoutY="258.0" startX="-110.9999771118164" startY="-10.0" />
+      <Line endX="-76.60000610351562" endY="54.0" layoutX="222.0" layoutY="258.0" startX="-76.60000610351562" startY="-10.0" />
+      <Line endX="-42.600006103515625" endY="54.0" layoutX="222.0" layoutY="258.0" startX="-42.800018310546875" startY="-7.600006103515625" />
+      <Line endX="-8.600006103515625" endY="54.0" layoutX="222.0" layoutY="258.0" startX="-8.600021362304688" startY="-10.5" />
+      <Line endX="23.000030517578125" endY="54.0" layoutX="222.0" layoutY="258.0" startX="23.000030517578125" startY="-9.5" />
+      <Line endX="57.399993896484375" endY="54.0" layoutX="222.0" layoutY="258.0" startX="57.899993896484375" startY="-9.5" />
+      <Line endX="-111.9999771118164" endY="81.0" layoutX="222.0" layoutY="258.0" startX="-111.9999771118164" startY="145.0" />
+      <Line endX="56.399993896484375" endY="113.0" layoutX="222.0" layoutY="258.0" startX="-109.9999771118164" startY="113.0" />
+      <Line endX="56.399993896484375" endY="145.0" layoutX="222.0" layoutY="258.0" startX="-109.19998931884766" startY="144.39999389648438" />
+      <Line endX="57.107086181640625" endY="145.70712280273438" layoutX="222.0" layoutY="258.0" startX="57.1070556640625" startY="81.70712280273438" />
+      <Line endX="-76.39999389648438" endY="143.69290161132812" layoutX="222.0" layoutY="258.0" startX="-76.39999389648438" startY="79.79290771484375" />
+      <Line endX="-43.600006103515625" endY="81.0" layoutX="222.0" layoutY="258.0" startX="-43.600006103515625" startY="142.0" />
+      <Line endX="-9.999969482421875" endY="81.0" layoutX="222.0" layoutY="258.0" startX="-9.199981689453125" startY="142.0" />
+      <Line endX="22.000030517578125" endY="81.70712280273438" layoutX="222.0" layoutY="258.0" startX="22.000030517578125" startY="144.39999389648438" />
+      <Line endX="56.399993896484375" endY="178.00003051757812" layoutX="222.0" layoutY="258.0" startX="-111.9999771118164" startY="178.00003051757812" />
+      <Line endX="-121.9999771118164" endY="232.00003051757812" layoutX="232.0" layoutY="268.0" startX="-121.9999771118164" startY="168.00003051757812" />
+      <Line endX="46.399993896484375" endY="200.00003051757812" layoutX="232.0" layoutY="268.0" startX="-121.9999771118164" startY="200.00003051757812" />
+      <Line endX="46.399993896484375" endY="232.00003051757812" layoutX="232.0" layoutY="268.0" startX="-119.9999771118164" startY="232.00003051757812" />
+      <Line endX="46.899993896484375" endY="231.50003051757812" layoutX="232.0" layoutY="268.0" startX="46.899993896484375" startY="169.60000610351562" />
+      <Line endX="-87.60000610351562" endY="232.00003051757812" layoutX="232.0" layoutY="268.0" startX="-87.60000610351562" startY="168.00003051757812" />
+      <Line endX="-53.600006103515625" endY="232.00003051757812" layoutX="232.0" layoutY="268.0" startX="-53.600006103515625" startY="167.50003051757812" />
+      <Line endX="-19.600006103515625" endY="232.00003051757812" layoutX="232.0" layoutY="268.0" startX="-19.199981689453125" startY="169.60000610351562" />
+      <Line endX="12.000030517578125" endY="232.00003051757812" layoutX="232.0" layoutY="268.0" startX="12.000030517578125" startY="167.50003051757812" />
+      <Line endX="-166.79998779296875" endY="214.19998168945312" layoutX="232.0" layoutY="268.0" startX="-210.0" startY="214.19998168945312" />
+      <Line endX="-146.39999389648438" endY="107.20001220703125" layoutX="242.0" layoutY="278.0" startX="-220.0" startY="107.20001220703125" />
+      <Line endX="-176.79998779296875" endY="16.20001220703125" layoutX="242.0" layoutY="278.0" startX="-220.0" startY="16.20001220703125" />
+      <Label layoutX="331.0" layoutY="513.0" prefHeight="27.0" prefWidth="319.0" text="* The above displays the level and the players highest score in that level .">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Line endX="-121.49998474121094" endY="44.5" layoutX="232.0" layoutY="268.0" startX="46.69287109375" startY="44.707122802734375" />
+      <Label fx:id="score11" layoutX="478.0" layoutY="251.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#c19722">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score12" layoutX="478.0" layoutY="280.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#c19722">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score13" layoutX="478.0" layoutY="307.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#c19722">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score14" layoutX="478.0" layoutY="333.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#c19722">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score15" layoutX="478.0" layoutY="358.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#c19722">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score16" layoutX="478.0" layoutY="385.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#c19722">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score17" layoutX="478.0" layoutY="409.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#c19722">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score18" layoutX="478.0" layoutY="435.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#c19722">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score19" layoutX="478.0" layoutY="463.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#c19722">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score20" layoutX="478.0" layoutY="491.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="#c19722">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score21" layoutX="579.0" layoutY="250.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score22" layoutX="579.0" layoutY="279.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score23" layoutX="579.0" layoutY="306.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score24" layoutX="579.0" layoutY="333.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score25" layoutX="579.0" layoutY="357.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score26" layoutX="579.0" layoutY="384.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score27" layoutX="579.0" layoutY="409.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score28" layoutX="579.0" layoutY="435.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score29" layoutX="579.0" layoutY="462.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="score30" layoutX="579.0" layoutY="489.0" prefHeight="18.0" prefWidth="34.0" text="000" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="526.0" prefHeight="27.0" prefWidth="319.0" text="* If a score is 000, that means the player has yet to complete the level.">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="122.0" prefHeight="27.0" prefWidth="292.0" text="* The Current Total Score only counts the highest score  ">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="136.0" prefHeight="27.0" prefWidth="258.0" text=" achieved in a level and not all scores achieved on a level.">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="32.0" prefWidth="128.0">
+         <children>
+            <Button fx:id="backToPlayerListButton" layoutX="11.0" layoutY="217.0" mnemonicParsing="false" onAction="#backToPlayerList" text="Back To Player List" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

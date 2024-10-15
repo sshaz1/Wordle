@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wordle.MainMenuController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label fx:id="welcomeText" alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 64; -fx-font-weight: bold;" text="Wordle">
+        <textFill>
+            <RadialGradient centerX="0.5444444444444445" centerY="0.4714285714285714" radius="0.5">
+                <stops>
+                    <Stop>
+                        <color>
+                            <Color red="0.003000000026077032" green="0.05237579718232155" blue="0.05999999865889549" />
+                        </color>
+                    </Stop>
+                    <Stop offset="1.0">
+                        <color>
+                            <Color red="0.7567878365516663" green="0.12479999661445618" blue="0.7799999713897705" />
+                        </color>
+                    </Stop>
+                </stops>
+            </RadialGradient>
+        </textFill>
+        <font>
+            <Font name="Helvetica Bold" size="13.0" />
+        </font>
+    </Label>
+    <VBox alignment="CENTER" fillWidth="true" spacing="10">
+        <children>
+            <Button fx:id="newplayButton" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#newPlayerClicked" style="-fx-background-color: #ffffff; -fx-border-color: black; -fx-border-width: 2; -fx-border-style: solid; -fx-text-fill: black; -fx-font-family: 'Helvetica Bold'; -fx-font-weight: bold; -fx-font-size: 16px; -fx-min-width: 200px; -fx-min-height: 50px;" text="New Player" />
+            <Button fx:id="loadplayButton" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#loadPlayerClicked" style="-fx-background-color: #ffffff; -fx-border-color: black; -fx-border-width: 2; -fx-border-style: solid; -fx-text-fill: black; -fx-font-family: 'Helvetica Bold'; -fx-font-weight: bold; -fx-font-size: 16px; -fx-min-width: 200px; -fx-min-height: 50px;" text="Load Player" />
+            <Button fx:id="howToPlayButton" alignment="CENTER" contentDisplay="CENTER" maxWidth="-Infinity" onMouseClicked="#onHowToButtonClick" style="-fx-background-color: #ffffff; -fx-border-color: black; -fx-border-width: 2; -fx-border-style: solid; -fx-text-fill: black; -fx-font-family: 'Helvetica Bold'; -fx-font-weight: bold; -fx-font-size: 16px; -fx-min-width: 200px; -fx-min-height: 50px;" text="How to Play" />
+            <Button fx:id="logInButton" alignment="CENTER" contentDisplay="CENTER" maxWidth="-Infinity" onMouseClicked="#onLogInButtonClick" style="-fx-background-color: #ffffff; -fx-border-color: black; -fx-border-width: 2; -fx-border-style: solid; -fx-text-fill: black; -fx-font-family: 'Helvetica Bold'; -fx-font-weight: bold; -fx-font-size: 16px; -fx-min-width: 200px; -fx-min-height: 50px;" text="Log In" />
+            <Button fx:id="debugButton" alignment="CENTER" contentDisplay="CENTER" maxWidth="-Infinity" onMouseClicked="#onDebugButtonClick" style="-fx-background-color: #ffffff; -fx-border-color: black; -fx-border-width: 2; -fx-border-style: solid; -fx-text-fill: black; -fx-font-family: 'Helvetica Bold'; -fx-font-weight: bold; -fx-font-size: 16px; -fx-min-width: 200px; -fx-min-height: 50px;" text="Debug" />
+            <Button fx:id="scoreboardButton" alignment="CENTER" contentDisplay="CENTER" maxWidth="-Infinity" onMouseClicked="#onScoreboardButtonClick" style="-fx-background-color: #ffffff; -fx-border-color: black; -fx-border-width: 2; -fx-border-style: solid; -fx-text-fill: black; -fx-font-family: 'Helvetica Bold'; -fx-font-weight: bold; -fx-font-size: 16px; -fx-min-width: 200px; -fx-min-height: 50px;" text="Scoreboard" textAlignment="CENTER" />
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="211.0" layoutY="187.0" maxWidth="-Infinity" onAction="#onQuitButtonClick" style="-fx-background-color: #ffffff; -fx-border-color: black; -fx-border-width: 2; -fx-border-style: solid; -fx-text-fill: black; -fx-font-family: 'Helvetica Bold'; -fx-font-weight: bold; -fx-font-size: 16px; -fx-min-width: 200px; -fx-min-height: 50px;" text="Quit" />
+        </children>
+    </VBox>
+
+</VBox>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="369.0" prefWidth="405.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wordle.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <AnchorPane layoutX="100.0" layoutY="100.0" prefHeight="84.0" prefWidth="575.0" />
+    <AnchorPane prefHeight="533.0" prefWidth="642.0">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="-14.0" prefHeight="56.0" prefWidth="335.0" text="Progress / Results" textAlignment="CENTER" wrapText="true">
+                <font>
+                    <Font name="System Bold" size="30.0" />
+                </font>
+            </Label>
+            <Line endX="186.0" endY="14.199996948242188" layoutX="230.0" layoutY="24.0" startX="-195.80001831054688" startY="14.200004577636719" strokeLineCap="ROUND" strokeMiterLimit="0.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="7.0" layoutX="36.0" layoutY="34.0" stroke="BLACK" strokeType="INSIDE" width="378.0" />
+            <ComboBox fx:id="playersComboBox" layoutX="84.0" layoutY="100.0" prefWidth="150.0" />
+            <Button fx:id="checkPlayerProgressButton" layoutX="235.0" layoutY="99.0" mnemonicParsing="false" onAction="#checkPlayerProgressResults" text="Display Information" />
+            <Label layoutX="4.0" layoutY="155.0" prefHeight="17.0" prefWidth="402.0" text="* Select a user from the dropdown and press the &quot;Display Information&quot; button to">
+                <font>
+                    <Font size="11.0" />
+                </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="173.0" prefHeight="17.0" prefWidth="402.0" text="display the chosen user's information.">
+                <font>
+                    <Font size="11.0" />
+                </font>
+            </Label>
+            <Label fx:id="noPlayerChosen" layoutX="96.0" layoutY="81.0" prefHeight="18.0" prefWidth="138.0" style="visibility: false;" text="! Please pick a player !" textFill="#f70606">
+                <font>
+                    <Font size="11.0" />
+                </font>
+            </Label>
+            <Button fx:id="backToLoginButton" layoutX="11.0" layoutY="217.0" mnemonicParsing="false" onAction="#backToLogin" text="Back To Login" />
+            <Label fx:id="playerInfoScreenIsOpen" layoutX="84.0" layoutY="126.0" prefHeight="18.0" prefWidth="281.0" style="visibility: false;" text="That player's information screen is already open!" textFill="RED">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font></Label>
+        </children>
+    </AnchorPane>
+</VBox>
