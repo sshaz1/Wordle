@@ -18,12 +18,6 @@ IntelliJ IDEA - version 2023.2.6
 - IntelliJ IDEA is available to download from jetbrains.com:
 https://www.jetbrains.com/idea/download/other.html
 
-### Compiling Instructions
-1. Extract the zip file named WordleGame_jar.zip from our team repository also included as a zip file
-
-2. Navigate to the directory where this zip file is extracted and execute the following command:
-java --module-path javafx-sdk-21.0.2/lib --add-modules javafx.fxml,javafx.controls,javafx.graphics -jar WordleGame.jar
-
 ### User guide: How To Use Software
 #### Part I (New Player):
 1. Run the MainMenu.java file.
